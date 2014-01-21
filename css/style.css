@@ -11,9 +11,9 @@ form {
     background-color: #fff;
     border: 5px #ccc solid;
     border-radius: 5px;
-    -webkit-box-shadow: 1px 0px 3px 0px rgba(50, 50, 50, 1);
-    -moz-box-shadow:    1px 0px 3px 0px rgba(50, 50, 50, 1);
-    box-shadow:         1px 0px 3px 0px rgba(50, 50, 50, 1);
+    -webkit-box-shadow: 1px 0 3px 2px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    1px 0 3px 2px rgba(50, 50, 50, 0.3);
+    box-shadow:         1px 0 3px 2px rgba(50, 50, 50, 0.3);
 }
 
 .form-field > label{
@@ -81,4 +81,9 @@ span.require {
 .submit-area > button[type="submit"]:hover {
     cursor: pointer;
     background-color: #8e9e20 ;
+}
+
+.error-block {
+    width: 13%;
+    margin: 200px auto;
 }

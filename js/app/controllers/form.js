@@ -1,9 +1,9 @@
 'use strict';
 
-app.controller('FormCtrl', function ($scope, FormService) {
+app.controller('formCtrl', function ($scope, formService) {
     $scope.form = {};
     //assign data to scope
-    FormService.form().then(function(form) {
+    formService.form().then(function(form) {
         $scope.form = form;
     });
 });
