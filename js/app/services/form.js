@@ -2,7 +2,7 @@
 
 app.service('formService', function ($http) {
     //for local testing set local url
-    var url = 'http://hfyljv.uni.me/task-form/api?prefix=JSON_CALLBACK';
+    var url = 'http://hfyljv.uni.me/task-form/api?callback=JSON_CALLBACK';
     //var url = './data/data.json';
 
     return {
