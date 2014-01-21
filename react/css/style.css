@@ -1,0 +1,89 @@
+body {
+    font-family: Arial;
+    font-size: 18px;
+    background-color: #ececec;
+}
+
+form {
+    margin: 90px auto 0;
+    padding: 20px 0 0;
+    width: 635px;
+    background-color: #fff;
+    border: 5px #ccc solid;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 0 3px 2px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    1px 0 3px 2px rgba(50, 50, 50, 0.3);
+    box-shadow:         1px 0 3px 2px rgba(50, 50, 50, 0.3);
+}
+
+.form-field > label{
+    width: 36%;
+    display: inline-block;
+    text-align: right;
+}
+
+label.require:after {
+    content: '*';
+    color:red;
+}
+
+.form-field > input[type=text],
+.form-field > select,
+.form-field > textarea {
+    width: 35%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px #c0c0c0 solid;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.form-field > select {
+    width: 38%;
+}
+
+.radio-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.radio-wrapper > label {
+    display: block;
+    font-size: 16px;
+}
+.radio-wrapper > label:hover {
+    cursor: pointer;
+}
+
+.form-field > textarea {
+    vertical-align: middle;
+}
+
+.submit-area {
+    margin: 20px 0 0;
+    overflow: auto;
+    background-color: #f5f5f5;
+    border-top: 1px #ddd solid;
+}
+
+.submit-area > button[type="submit"] {
+    height: 35px;
+    width: 100px;
+    margin: 15px 35px 15px 0;
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    background-color: #7e9e20;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-area > button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #8e9e20 ;
+}
+
+.error-block {
+    width: 13%;
+    margin: 200px auto;
+}
