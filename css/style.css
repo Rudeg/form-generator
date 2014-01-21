@@ -51,6 +51,9 @@ span.require {
     display: block;
     font-size: 16px;
 }
+.radio-wrapper > label:hover {
+    cursor: pointer;
+}
 
 .form-field > textarea {
     vertical-align: middle;

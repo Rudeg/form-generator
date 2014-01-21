@@ -5,7 +5,7 @@ app.directive('formDirective', function () {
         templateUrl: './templates/form.html',
         restrict: 'E',
         scope: {
-            form:'=form'
+            form:'='
         }
     };
 });
