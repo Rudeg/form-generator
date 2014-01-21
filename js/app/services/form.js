@@ -1,21 +1,21 @@
 'use strict';
 
-app.service('formService', function FormService($http) {
+app.service('formService', function ($http) {
     //for local testing set local url
-    //var url = 'http://hfyljv.uni.me/task-form/api';
-    var url = './data/data.json';
+    var url = 'http://hfyljv.uni.me/task-form/api?callback=JSON_CALLBACK';
+    //var url = './data/data.json';
 
     return {
         form: function() {
-            return $http.get(url).then(function(response) {
-                if(response.data.status === 'Success') {
-                    response.data.errorStatus = false;
-                    return response.data;
+            return $http.jsonp(url).success(function(response) {
+                if(response.status === 'Success') {
+                    response.errorStatus = false;
+                    return response;
                 }
                 else {
-                    var resp = {'Error':'Invalid data from server', errorStatus:true};
                     console.log('Invalid data from server');
-                    return resp;
+                    response.errorStatus = true;
+                    return response;
                 }
             });
         }
