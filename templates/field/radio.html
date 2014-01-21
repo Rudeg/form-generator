@@ -1,0 +1,7 @@
+<div class="form-field">
+    <label>{{field.label}}<span ng-if="field.required" class="require">*</span></label>
+    <div class="radio-wrapper">
+        <label ng-repeat="option in field.options">
+            <input type="radio" name="{{field.name}}" value="{{option.value}}" ng-required="field.required"/>{{option.label}}</label>
+    </div>
+</div>

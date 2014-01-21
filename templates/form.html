@@ -1,0 +1,9 @@
+<form name="myForm" id="myForm" ng-submit="submit">
+    <div ng-repeat="field in form.form.questions">
+        <field-directive field="field">
+        </field-directive>
+    </div>
+    <div class="submit-area">
+        <button type="submit">Submit</button>
+    </div>
+</form>

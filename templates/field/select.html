@@ -1,0 +1,7 @@
+<div class="form-field">
+    <label for="{{field.name}}">{{field.label}}<span ng-if="field.required" class="require">*</span></label>
+    <select name="{{field.name}}" ng-required="field.required">
+        <option value="">-please select-</option>
+        <option ng-repeat="option in field.options" value="{{option.value}}">{{option.label}}</option>
+    </select>
+</div>
