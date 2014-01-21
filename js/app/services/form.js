@@ -1,13 +1,13 @@
 'use strict';
 
-app.service('formService', function FormService($http) {
+app.service('formService', function ($http) {
     //for local testing set local url
-    //var url = 'http://hfyljv.uni.me/task-form/api';
-    var url = './data/data.json';
+    var url = 'http://hfyljv.uni.me/task-form/api?prefix=JSON_CALLBACK';
+    //var url = './data/data.json';
 
     return {
         form: function() {
-            return $http.get(url).then(function(response) {
+            return $http.jsonp(url).success(function(response) {
                 if(response.data.status === 'Success') {
                     response.data.errorStatus = false;
                     return response.data;
