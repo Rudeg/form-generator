@@ -1,7 +1,8 @@
 /**
  * @jsx React.DOM
  */
-
+//TODO:Add render before ajax, and then update status after get response
+//TODO:Replace data source
 $.ajax({
     type : "GET",
     dataType : "json",
